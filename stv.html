@@ -1,0 +1,73 @@
+﻿
+<script type="820e7ec229bb4cfc10e6c62c-text/javascript">
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
+
+</script>
+<meta name="referrer" content="no-referrer">
+<style>html,body{margin:0;padding:0;background:#000;;}</style>
+<link href="http://bat.nhanhtv.com/sao/video-js.min.css" rel="stylesheet">
+<script data-cfasync='false' src="http://bat.nhanhtv.com/sao/videojs-ie8.min.js"></script>
+<script data-cfasync='false' src="http://bat.nhanhtv.com/sao/video.js"></script>
+<script data-cfasync='false' src="http://bat.nhanhtv.com/sao/vjs-hls.min.js"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="820e7ec229bb4cfc10e6c62c-|49"></script><body onload="init()">
+<script data-cfasync='false'>
+
+
+	 if (navigator.userAgent.match(/Android/i) ||  navigator.userAgent.match(/webOS/i) ||	 navigator.userAgent.match(/iPhone/i) ||     navigator.userAgent.match(/iPod/i) ||          navigator.userAgent.match(/iPad/i) ||		 navigator.userAgent.match(/Mobile Safari/i) ||            navigator.userAgent.match(/Blackberry/i)){
+				document.write("\<video style=\"z-index:2;width:100%;height:100%;background-color:#000;-o-object-fit:fill;object-fit:fill\"  controls=\"controls\" autoplay=\"true\" preload=\"auto\" height=\"auto\" src=\""+sv+"\"\>\<\/video\>");
+			 }else {
+				 
+				 document.write('<video id="streaming" autoplay  preload="auto" height="100%" width="100%" class="video-js" controls data-setup="{&quot;language&quot;: &quot;vi&quot;}"></video>');
+
+		function play(cid) {
+
+
+				src = cid;
+			player = videojs("streaming");
+			player.ready(function() {
+				player.src({
+					src: src,
+					type: "application/x-mpegURL",
+					autoplay: "false",
+				});
+			});
+
+			//player.play();
+
+		}
+
+		play(sv);
+			 }
+	</script>
+<div id="videojs">
+</div>
+<style>
+	.video-js {
+		width: 100%;
+		height: 95%;
+	}
+	body {
+		text-align: center;
+		margin: 0px;
+	}
+	#videojs {
+		width: 100%;
+		height: 95%;
+	}.streaming-dimensions{
+				width: 100% !important;
+		height: 95% !important;
+	}
+</style>
+
+<span style="background: transparent; box-sizing: border-box; color: white; font-size: 10px; font-weight: bold; height: 38px; padding: 0px 5px; position: absolute; right: 60px; top: 400px; width: 70px;"></span><img src="http://4.bp.blogspot.com/-34SPx0qzBko/XV2tEcLbiVI/AAAAAAAAID8/H9j9Vrfo1jEVSq8xyWQgPvowGHt94SYvwCK4BGAYYCw/s1600/logo1.png" pagespeed_url_hash="b8e6b5a44e2403b" style="border: none; box-sizing: border-box; height: 30px; padding: 0px; position: absolute; right: 15px; top: 20px; vertical-align: middle; width: 90px;" />
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'58aabf06ed6cedbb',m:'a4594c322560271b4166504730b9a5056ecd18a4-1588013605-1800-Adfpbq1JryTLWWAlCLgSxOqTuTRPs3E7ilOOpJIf1I9Ej4GPPpjkfdmTAsYAeQbOxrS55Qc1rpaUkB+JkFNnnRUxS/lLG6DniL7PpuBmwAMYeztdUTh9eEBvH7iCt8brDnSGLCVtlQ22K3vB6+UKVs81pHakjTVAaE8DagOKez2r',s:[0x6f3f8fd586,0x7ca20708b9],fb:0,}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'58c216739d5ece1b',m:'05cf0643da5ec5a145c4cc045bc7503354795d7f-1588258358-1800-AUVCHEhIibyMrvcDywrUvVLZiDraifN49b4HFKHwHBelwotpgHwUDjeH+302AjHMxln+rPi6Phup3Lwm2Nqw4NGwGfamB3lUe2FevBWT+ADtkZ16WB73uSn0ZuNp3hO6HJS6rWmxOc2Q88bevfLq3yWo1dpTC1B1WFb3kd0N8IuE',s:[0x01e3116460,0x575eb3866d],fb:0,}})();</script>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="7fd48e4e9b637a138f663eba-|49" defer=""></script>
